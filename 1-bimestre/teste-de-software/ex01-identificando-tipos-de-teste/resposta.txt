@@ -1,0 +1,8 @@
+1. Testar uma função isolada é qual tipo de teste?
+- Teste unitário
+
+2. Testar a API junto com o banco é qual tipo?
+- Teste de integração
+
+3. Qual a principal ideia do TDD?
+- Testar um arquivo de maneira mais rápido, sem criar códigos manuais para teste e de maneira automatizada
