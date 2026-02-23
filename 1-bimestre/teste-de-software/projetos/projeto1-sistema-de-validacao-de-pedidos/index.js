@@ -1,13 +1,17 @@
 function validarPedido(pedido) {
-    if(pedido.total <= 0){
-        return false
-    } else if(pedido.cliente == undefined || pedido.cliente == null) {
-        return false
-    } else if(pedido.itens.length <= 0) {
-        return false
-    } else {
-        return true
-    }
+  if (!pedido.cliente) {
+    return false
+  }
+
+  if (pedido.total <= 0) {
+    return false
+  }
+
+  if (!pedido.itens || pedido.itens.length === 0) {
+    return false
+  }
+
+  return true
 }
 
 module.exports = validarPedido
